@@ -1,6 +1,11 @@
 # Car API (Node.js + Express + MongoDB + Typescript)
 
-<p align="left"> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> </p>
+<p align="left">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+</p>
 
 A simple and clean REST API built with Node.js, Express, MongoDB, and TypeScript. The goal is to practice backend
 development using good architecture and clean code.
@@ -104,6 +109,34 @@ The API follows a clean and organized structure:
 - Routes: connect the endpoints to controllers
 
 This separation keeps the code clean, modular, and easy to maintain.
+
+## API Documentation (Swagger)
+
+This API is documented using **Swagger**. You can explore and test the endpoints in a browser.
+
+### How to access
+
+1. Start the server:
+```
+npm start
+```
+
+2. Open your browser and go to:
+```
+http://localhost:3000/api-docs
+```
+
+3. You will see the Swagger UI with all the routes:
+
+- **GET /cars** – List all cars
+- **GET /cars/:id** – Get a car by ID
+- **POST /cars** – Create a new car
+- **PUT /cars/:id** – Update a car
+- **DELETE /cars/:id** – Remove a car
+
+The Swagger setup is separated from your route files to keep the project clean and maintainable.
+
+
 
 ## Tests
 
