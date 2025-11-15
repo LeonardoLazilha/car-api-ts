@@ -3,32 +3,32 @@
  * @swagger
  * tags:
  *   name: Cars
- *   description: Gerenciamento de carros
+ *   description: Car management
  */
 /**
  * @swagger
  * /cars:
  *   get:
- *     summary: Lista todos os carros
+ *     summary: List all cars
  *     tags: [Cars]
  *     responses:
  *       200:
- *         description: Lista de carros
+ *         description: List of cars
  *
  *   post:
- *     summary: Cria um novo carro
+ *     summary: Create a new car
  *     tags: [Cars]
  *     requestBody:
  *       required: true
  *     responses:
  *       201:
- *         description: Carro criado
+ *         description: Car created
  */
 /**
  * @swagger
  * /cars/{id}:
  *   get:
- *     summary: Retorna um carro pelo ID
+ *     summary: Get a car by ID
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -36,10 +36,10 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Carro encontrado
+ *         description: Car found
  *
  *   put:
- *     summary: Atualiza um carro
+ *     summary: Update a car
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -47,10 +47,10 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Carro atualizado
+ *         description: Car updated
  *
  *   delete:
- *     summary: Remove um carro
+ *     summary: Delete a car
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -58,7 +58,7 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Carro removido
+ *         description: Car deleted
  */
 /**
  * @swagger

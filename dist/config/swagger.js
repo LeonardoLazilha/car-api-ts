@@ -12,7 +12,7 @@ const options = {
         info: {
             title: "Car API",
             version: "1.0.0",
-            description: "API para gerenciamento de carros com Node, Express e TypeScript"
+            description: "API for managing cars using Node, Express, and TypeScript."
         },
         servers: [
             {
