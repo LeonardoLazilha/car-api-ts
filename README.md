@@ -61,7 +61,7 @@ http://localhost:3000
 
 ## Routes
 
-### POST /recipes
+### POST /cars
 
 ```
 {
@@ -76,7 +76,7 @@ http://localhost:3000
 
 ### GET /cars/:id
 
-### PUT /cars:id
+### PUT /cars/:id
 
 ### DELETE /cars:id
 
@@ -95,7 +95,7 @@ http://localhost:3000
 
 The API follows a clean and organized structure:
 
-- Model: defines the recipe schema
+- Model: defines the car schema
 
 - Service: contains the logic for database access
 
@@ -104,3 +104,21 @@ The API follows a clean and organized structure:
 - Routes: connect the endpoints to controllers
 
 This separation keeps the code clean, modular, and easy to maintain.
+
+## Tests
+
+This project includes both **unit** and **integration** tests using **Jest** and **Supertest**:
+
+- **Unit tests**: test individual service functions (`listCars`, `createCar`) with mocked database.
+- **Integration tests**: test the full API endpoints (controllers + services + database) using an in-memory MongoDB (`mongodb-memory-server`).
+
+### Run tests
+```
+src/__tests__/
+├── car-service.test.ts # unit tests
+├── car-integration.test.ts # integration tests
+```
+
+- Unit tests check the logic in isolation.
+- Integration tests check if the API routes actually work with the database and the app.
+
