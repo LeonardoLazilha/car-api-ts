@@ -1,6 +1,6 @@
 import swaggerJsdoc from "swagger-jsdoc";
-import swaggerUi from "swagger-ui-express"
-import { Application } from "express";
+import swaggerUi from "swagger-ui-express";
+import { Application } from "express"; // ✅ tipo correto
 
 const options = {
     definition: {
@@ -8,7 +8,7 @@ const options = {
         info: {
             title: "Car API",
             version: "1.0.0",
-            description: "API para gerenciamento de carros com Node, Express e TypeScript"
+            description: "API for managing cars using Node, Express, and TypeScript."
         },
         servers: [
             {
@@ -21,6 +21,6 @@ const options = {
 
 const swaggerSpec = swaggerJsdoc(options);
 
-export const setupSwagger = (app: Express) => {
+export const setupSwagger = (app: Application) => {
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 }

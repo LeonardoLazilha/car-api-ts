@@ -1,35 +1,34 @@
+"use strict";
 /**
  * @swagger
  * tags:
  *   name: Cars
- *   description: Car management
+ *   description: Gerenciamento de carros
  */
-
 /**
  * @swagger
  * /cars:
  *   get:
- *     summary: List all cars
+ *     summary: Lista todos os carros
  *     tags: [Cars]
  *     responses:
  *       200:
- *         description: List of cars
+ *         description: Lista de carros
  *
  *   post:
- *     summary: Create a new car
+ *     summary: Cria um novo carro
  *     tags: [Cars]
  *     requestBody:
  *       required: true
  *     responses:
  *       201:
- *         description: Car created
+ *         description: Carro criado
  */
-
 /**
  * @swagger
  * /cars/{id}:
  *   get:
- *     summary: Get a car by ID
+ *     summary: Retorna um carro pelo ID
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -37,10 +36,10 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Car found
+ *         description: Carro encontrado
  *
  *   put:
- *     summary: Update a car
+ *     summary: Atualiza um carro
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -48,10 +47,10 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Car updated
+ *         description: Carro atualizado
  *
  *   delete:
- *     summary: Delete a car
+ *     summary: Remove um carro
  *     tags: [Cars]
  *     parameters:
  *       - in: path
@@ -59,9 +58,8 @@
  *         required: true
  *     responses:
  *       200:
- *         description: Car deleted
+ *         description: Carro removido
  */
-
 /**
  * @swagger
  * components:
