@@ -12,7 +12,7 @@ export const getCar = async (id: string): Promise<ICar | null> => {
     return Car.findById(id);
 };
 
-export const updateCar = async (id: string, data: Partial<ICar>): Promise<Icar | null> => {
+export const updateCar = async (id: string, data: Partial<ICar>): Promise<ICar | null> => {
     return Car.findByIdAndUpdate(id, data, {new: true});
 };
 
