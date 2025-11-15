@@ -46,12 +46,6 @@ export const update = async (req: Request, res: Response): Promise<void> => {
 export const remove = async (req: Request, res: Response): Promise<void> => {
     try{
         const car = await deleteCar(req.params.id);
-
-        if(!car){
-            res.status(404).json({ message: "Car not found" });
-            return;
-        }
-
         res.status(200).json(car);
     }catch (error: any){
         res.status(500).json({ error: error.message });
