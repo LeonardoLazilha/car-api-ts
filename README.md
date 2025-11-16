@@ -49,7 +49,7 @@ npm install
 #### 3. Configure local MongoDB
 
 ```
-mongodb://localhost:27017/carApiDB
+mongodb://localhost:27017/myCarDB
 ```
 
 #### 4. Start the server
